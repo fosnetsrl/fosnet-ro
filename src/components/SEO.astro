@@ -1,0 +1,16 @@
+---
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Foșnet",
+  url: "https://fosnet.ro",
+  image: "https://fosnet.ro/logo.png",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Cluj-Napoca",
+    addressCountry: "RO",
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

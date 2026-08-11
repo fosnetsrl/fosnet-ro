@@ -1,0 +1,180 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ===========================================================
+   THEME
+   =========================================================== */
+
+@theme {
+
+  /* Fonts */
+
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Fraunces", serif;
+
+  /* Colors */
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+
+  /* Radius
+
+  --radius-sm: .5rem;
+  --radius-md: .75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 2.5rem; */
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+
+  --background: oklch(99.5% .005 130);
+  --foreground: oklch(22% .04 150);
+
+  --card: white;
+  --card-foreground: var(--primary);
+
+  --primary: oklch(48% .14 148);
+  --primary-foreground: white;
+
+  --secondary: oklch(95% .03 140);
+  --secondary-foreground: oklch(28% .06 150);
+
+  --accent: oklch(90% .08 130);
+  --accent-foreground: oklch(25% .06 150);
+
+  --muted: oklch(96% .015 140);
+  --muted-foreground: oklch(45% .03 150);
+
+  --border: oklch(90% .02 140);
+
+  --radius: 0.625rem;
+  /* Extras */
+
+  --gradient-primary:
+    linear-gradient(
+      135deg,
+      /* oklch(48% .14 148), */
+      oklch(35% .11 148),
+      oklch(62% .17 148)
+    );
+
+  --gradient-hero:
+    linear-gradient(
+      135deg,
+      oklch(35% .11 148 / .85),
+      oklch(22% .06 150 / .70)
+    );
+
+  --shadow-soft:
+      0 10px 25px rgb(0 0 0 /.08);
+
+  --shadow-elegant:
+      0 18px 45px rgb(0 0 0 /.18);
+
+}
+
+@layer base {
+
+*{
+    @apply border-border;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    @apply
+    bg-background
+    text-foreground
+    font-sans;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+h1,h2,h3,h4,h5{
+
+    @apply font-display;
+
+    letter-spacing:-.02em;
+
+}
+
+img{
+
+    display:block;
+
+}
+
+}
+
+@layer components {
+
+.btn-hero{
+
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    rounded-full
+    px-7
+    py-3.5
+    font-semibold
+    transition-all
+    duration-300;
+
+    background:var(--gradient-primary);
+
+    color:var(--primary-foreground);
+
+    box-shadow:var(--shadow-elegant);
+
+}
+
+.btn-hero:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.text-gradient{
+
+    background:var(--gradient-primary);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+}
+
+}

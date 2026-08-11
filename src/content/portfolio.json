@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Portfolio | Verdant Care",
+    "description": "Take a look at some of our recent landscaping projects."
+  },
+  "hero": {
+    "label": "Portfolio",
+    "title": "Our recent work.",
+    "description": "Every project is unique. Here are a few examples of gardens, lawns and outdoor spaces we've transformed."
+  },
+  "projects": [
+    {
+      "title": "Front Yard Transformation",
+      "category": "Landscape Design",
+      "image": "hero"
+    },
+    {
+      "title": "Modern Garden",
+      "category": "Garden Design",
+      "image": "team"
+    },
+    {
+      "title": "Weekly Lawn Care",
+      "category": "Maintenance",
+      "image": "hero"
+    },
+    {
+      "title": "Luxury Backyard",
+      "category": "Outdoor Living",
+      "image": "team"
+    },
+    {
+      "title": "Seasonal Cleanup",
+      "category": "Maintenance",
+      "image": "hero"
+    },
+    {
+      "title": "Tree Pruning",
+      "category": "Tree Care",
+      "image": "team"
+    }
+  ],
+  "cta": {
+    "title": "Imagine what we can do for your property.",
+    "description": "We'd love to visit your property, discuss your ideas, and create a landscape you'll enjoy for years.",
+    "button": "Start Your Project"
+  }
+}

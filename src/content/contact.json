@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Contact | Verdant Care",
+    "description": "Request a free landscaping quote."
+  },
+  "hero": {
+    "label": "Contact",
+    "title": "Let's talk about your garden.",
+    "description": "Whether you need weekly maintenance or a complete landscape redesign, we'd love to hear about your project."
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "serviceNeeded": "Service Needed",
+    "services": [
+      "Lawn Care",
+      "Garden Design",
+      "Tree Care",
+      "Landscape Maintenance",
+      "Seasonal Cleanup"
+    ],
+    "message": "Message",
+    "submit": "Request Free Quote"
+  },
+  "contactInfo": [
+    {
+      "title": "Phone",
+      "value": "(555) 010-2288",
+      "href": "tel:+15550102288",
+      "icon": "lucide:phone"
+    },
+    {
+      "title": "Email",
+      "value": "hello@verdantcare.com",
+      "href": "mailto:hello@verdantcare.com",
+      "icon": "lucide:mail"
+    },
+    {
+      "title": "Location",
+      "value": "Greater Portland Area",
+      "href": "#",
+      "icon": "lucide:pin"
+    },
+    {
+      "title": "Working Hours",
+      "value": "Mon-Fri · 7:00 - 18:00",
+      "href": "#",
+      "icon": "lucide:clock"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import content from "../content/contact.json";
+---
+
+<Layout title={content.meta.title} description={content.meta.description}>
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-widest text-primary">
+        {content.hero.label}
+      </p>
+
+      <h1 class="mt-3 font-display text-5xl font-bold md:text-6xl">
+        {content.hero.title}
+      </h1>
+
+      <p class="mt-6 text-lg text-muted-foreground">
+        {content.hero.description}
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="mx-auto grid max-w-7xl gap-12 px-6 pb-24 lg:grid-cols-[380px_1fr]"
+  >
+    <aside class="space-y-6">
+      {
+        content.contactInfo.map((item) => (
+          <div
+            class="rounded-3xl border border-border bg-card p-6"
+            style="box-shadow: var(--shadow-soft)"
+          >
+            <div class="text-3xl">
+              <Icon name={item.icon} />
+            </div>
+
+            <div class="mt-4 text-sm font-semibold uppercase tracking-widest text-primary">
+              {item.title}
+            </div>
+
+            {item.href === "#" ? (
+              <p class="mt-2 text-muted-foreground">{item.value}</p>
+            ) : (
+              <a href={item.href} class="mt-2 block hover:text-primary">
+                {item.value}
+              </a>
+            )}
+          </div>
+        ))
+      }
+    </aside>
+
+    <div
+      class="rounded-[2rem] border border-border bg-card p-8"
+      style="box-shadow: var(--shadow-soft)"
+    >
+      <form class="space-y-6">
+        <div class="grid gap-6 md:grid-cols-2">
+          <div>
+            <label class="mb-2 block text-sm font-medium">
+              {content.form.firstName}
+            </label>
+
+            <input
+              type="text"
+              class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
+            />
+          </div>
+
+          <div>
+            <label class="mb-2 block text-sm font-medium">
+              {content.form.lastName}
+            </label>
+
+            <input
+              type="text"
+              class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
+            />
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <div>
+            <label class="mb-2 block text-sm font-medium">
+              {content.form.email}
+            </label>
+
+            <input
+              type="email"
+              class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
+            />
+          </div>
+
+          <div>
+            <label class="mb-2 block text-sm font-medium">
+              {content.form.phone}
+            </label>
+
+            <input
+              type="tel"
+              class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="mb-2 block text-sm font-medium">
+            {content.form.serviceNeeded}
+          </label>
+
+          <select
+            class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
+          >
+            {content.form.services.map((service) => <option>{service}</option>)}
+          </select>
+        </div>
+
+        <div>
+          <label class="mb-2 block text-sm font-medium">
+            {content.form.message}
+          </label>
+
+          <textarea
+            rows="6"
+            class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
+          ></textarea>
+        </div>
+
+        <button class="rounded-full btn-hero px-8 py-4 font-semibold">
+          {content.form.submit}
+        </button>
+      </form>
+    </div>
+  </section>
+</Layout>

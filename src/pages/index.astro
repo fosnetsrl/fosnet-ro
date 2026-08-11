@@ -1,0 +1,280 @@
+---
+import Layout from "../layouts/Layout.astro";
+import hero from "../assets/hero.jpg";
+import { Icon } from "astro-icon/components";
+import content from "../content/home.json";
+---
+
+<Layout title={content.meta.title} description={content.meta.description}>
+  <section class="relative isolate overflow-hidden">
+    <img
+      src={hero.src}
+      alt={content.hero.imageAlt}
+      class="absolute inset-0 -z-10 h-full w-full object-cover"
+      width="1920"
+      height="1080"
+    />
+
+    <div
+      class="absolute inset-0 -z-10"
+      style="background-image: var(--gradient-hero);"
+    >
+    </div>
+
+    <div class="mx-auto grid max-w-7xl gap-8 px-6 py-32 md:py-44">
+      <span
+        class="inline-flex w-fit items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-white backdrop-blur"
+      >
+        <Icon name={"lucide:leaf"} />
+        {content.hero.badge}
+      </span>
+
+      <h1
+        class="max-w-3xl font-display text-5xl font-bold leading-tight text-white md:text-7xl"
+      >
+        {content.hero.titleBefore}
+        <span class="italic text-accent">{content.hero.titleAccent}</span>.
+      </h1>
+
+      <p class="max-w-xl text-lg text-white/85">
+        {content.hero.descriptionBefore}
+        <span class="italic font-bold text-accent"
+          >{content.hero.descriptionAccent}</span
+        >
+        {content.hero.descriptionAfter}
+      </p>
+
+      <div class="flex flex-wrap gap-3">
+        <a
+          href={content.hero.phoneHref}
+          class="inline-flex items-center gap-2 rounded-full btn-hero px-7 py-3.5 text-base font-semibold"
+        >
+          <Icon name={"lucide:phone"} />
+          <span class="ml-2">{content.hero.phoneButton}</span>
+        </a>
+
+        <a
+          href="/contact"
+          class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+        >
+          <span class="mr-2">{content.hero.quoteButton}</span>
+          <Icon name={"lucide:move-right"} />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 py-24 text-center">
+    <p class="text-sm font-semibold uppercase tracking-widest text-primary">
+      {content.about.label}
+    </p>
+
+    <h2 class="mt-3 font-display text-4xl font-bold md:text-5xl">
+      {content.about.title}
+    </h2>
+
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+      {content.about.description}
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 py-16">
+    <div class="flex items-end justify-between gap-6">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary">
+          {content.service.label}
+        </p>
+
+        <h2 class="mt-2 font-display text-4xl font-bold">
+          {content.service.title}
+        </h2>
+      </div>
+
+      <a
+        href="/services"
+        class="hidden md:inline text-sm font-semibold text-primary hover:underline"
+      >
+        {content.service.button}
+      </a>
+    </div>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        content.services.map((service) => (
+          <div
+            class="group rounded-3xl border border-primary bg-primary text-primary-foreground p-7 transition-all hover:-translate-y-1"
+            style="box-shadow: var(--shadow-elegant)"
+          >
+            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary-foreground/30 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
+              <Icon name={service.icon} class="h-6 w-6" />
+            </div>
+
+            <h3 class="mt-5 font-display text-xl font-semibold text-primary-foreground">
+              {service.title}
+            </h3>
+
+            <p class="mt-2 text-sm text-primary-foreground/80">
+              {service.desc}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-widest text-primary">
+        {content.plan.label}
+      </p>
+
+      <h2 class="mt-2 font-display text-4xl font-bold">
+        {content.plan.title}
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-xl text-muted-foreground">
+        {content.plan.description}
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+      {
+        content.plans.map((plan) => (
+          <div
+            class={`relative rounded-3xl border p-8 transition-transform hover:-translate-y-1 ${
+              plan.featured
+                ? "border-primary bg-primary text-primary-foreground"
+                : "border-border bg-card"
+            }`}
+            style={`box-shadow:${
+              plan.featured ? "var(--shadow-elegant)" : "var(--shadow-soft)"
+            }`}
+          >
+            {plan.featured && (
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-1 text-xs font-bold text-accent-foreground">
+                {content.plan.popular}
+              </span>
+            )}
+
+            <h3 class="font-display text-2xl font-semibold">{plan.name}</h3>
+
+            <p
+              class={`mt-1 text-sm ${
+                plan.featured
+                  ? "text-primary-foreground/80"
+                  : "text-muted-foreground"
+              }`}
+            >
+              {plan.tag}
+            </p>
+
+            <div class="mt-6 flex items-baseline gap-1">
+              <span class="font-display text-5xl font-bold">${plan.price}</span>
+
+              <span
+                class={
+                  plan.featured
+                    ? "text-primary-foreground/70"
+                    : "text-muted-foreground"
+                }
+              >
+                {content.plan.perMonth}
+              </span>
+            </div>
+
+            <ul class="mt-8 space-y-3 text-sm">
+              {plan.features.map((feature) => (
+                <li class="flex gap-2">
+                  <span>✔</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="/contact"
+              class={`mt-8 inline-flex w-full justify-center rounded-full px-5 py-3 text-sm font-semibold ${
+                plan.featured
+                  ? "bg-white text-primary hover:bg-white/90"
+                  : "btn-hero"
+              }`}
+            >
+              {content.plan.buttonPrefix}
+              {plan.name}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="bg-secondary/40 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary">
+          {content.testimonial.label}
+        </p>
+
+        <h2 class="mt-2 font-display text-4xl font-bold">
+          {content.testimonial.title}
+        </h2>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        {
+          content.testimonials.map((item) => (
+            <blockquote
+              class="rounded-3xl border border-border bg-card p-8"
+              style="box-shadow: var(--shadow-soft)"
+            >
+              <div class="text-primary text-lg">
+                {content.testimonial.stars}
+              </div>
+
+              <p class="mt-5">"{item.quote}"</p>
+
+              <footer class="mt-6">
+                <div class="font-semibold">{item.name}</div>
+
+                <div class="text-sm text-muted-foreground">{item.role}</div>
+              </footer>
+            </blockquote>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 py-24">
+    <div
+      class="relative overflow-hidden rounded-3xl px-10 py-20 text-center text-primary-foreground md:px-20"
+      style="background-image: var(--gradient-primary); box-shadow: var(--shadow-elegant);"
+    >
+      <h2 class="font-display text-4xl font-bold md:text-5xl">
+        {content.cta.title}
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-xl text-primary-foreground/85">
+        {content.cta.description}
+      </p>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a
+          href="/contact"
+          class="inline-flex items-center rounded-full bg-white px-7 py-3.5 text-base font-semibold text-primary transition-transform hover:-translate-y-0.5"
+        >
+          <span class="mr-2">{content.cta.quoteButton}</span>
+          <Icon name={"lucide:move-right"} />
+        </a>
+
+        <a
+          href={content.cta.phoneHref}
+          class="inline-flex items-center rounded-full border border-white/50 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10"
+        >
+          <Icon name={"lucide:phone"} />
+          <span class="ml-2">{content.cta.phoneButton}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

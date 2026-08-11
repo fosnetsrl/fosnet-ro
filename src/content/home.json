@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Verdant Care — Gardening & Landscaping Services",
+    "description": "Professional lawn care, landscaping and garden maintenance."
+  },
+  "hero": {
+    "imageAlt": "Manicured lawn and hedges",
+    "badge": "Locally owned · Since 2011",
+    "titleBefore": "Grădini crescute cu",
+    "titleAccent": " grijă ",
+    "descriptionBefore": "De la o simplă tundere a gazonului până la transformarea completă a grădinii,",
+    "descriptionAccent": " Foșnet ",
+    "descriptionAfter": " oferă servicii profesionale pentru un exterior impecabil, sezon după sezon.",
+    "phoneButton": "Sună Acum",
+    "quoteButton": "Obține o ofertă gratuită",
+    "phoneHref": "tel:+15550102288"
+  },
+  "about": {
+    "label": "Cine suntem?",
+    "title": "Un grup restrâns de grădinari cu atenție impresionantă la detalii.",
+    "description": "Îngrijim fiecare grădină ca pe propria noastră grădină. Suntem punctuali și ne tratăm munca ca pe o prioritate."
+  },
+  "service": {
+    "label": "Serviciile noastre",
+    "title": "Ce putem face pentru tine",
+    "button": "Vezi toate serviciile →"
+  },
+  "services": [
+    {
+      "title": "Tuns Gazonul",
+      "desc": "Îngrijire săptămânală professională pentru un gazon des, sănătos și uniform.",
+      "icon": "lucide:scissors"
+    },
+    {
+      "title": "Îngrijire arbori",
+      "desc": "Servicii profesionale de toaletare, întreținere și îndepărtare a arborilor, în deplină siguranță.",
+      "icon": "lucide:trees"
+    },
+    {
+      "title": "Amenajare grădini",
+      "desc": "Ronduri de flori, culori atent alese și pavaje special gândite.",
+      "icon": "lucide:sprout"
+    },
+    {
+      "title": "Curățenie sezonieră",
+      "desc": "Începutul de primăvară și îndepărtarea frunzelor prin suflare pentru toamnă.",
+      "icon": "lucide:leaf"
+    }
+  ],
+  "plan": {
+    "label": "Plans",
+    "title": "Îngrijire simplă lunară.",
+    "description": "Alege un plan care îți complimentează propria grădină.",
+    "popular": "Cel mai popular",
+    "perMonth": "/luna",
+    "buttonPrefix": "Alege "
+  },
+  "plans": [
+    {
+      "name": "Basic",
+      "price": "89",
+      "tag": "Potrivit pentru grădini mici",
+      "features": [
+        "Tunderea gazonului la fiecare două săptămâni",
+        "Finisarea marginilor gazonului",
+        "Evaluare sezonieră a stării grădinii",
+        "(mai trebe ceva aici)"
+      ]
+    },
+    {
+      "name": "Standard",
+      "price": "149",
+      "tag": "Cel mai popular plan al nostru (ar trebui schimbat ca mai scrie deasupra)",
+      "featured": true,
+      "features": [
+        "Tunderea gazonului la fiecare două săptămâni",
+        "Toaletarea gardurilor vii și a arbuștilor",
+        "Îndepărtarea buruienilor",
+        "Tratamente împotriva dăunătorilor"
+      ]
+    },
+    {
+      "name": "Premium",
+      "price": "239",
+      "tag": "Servicii complete de îngrijire",
+      "features": [
+        "Tunderea și finisarea gazonului săptămânal",
+        "Întreținerea completă a grădinii",
+        "Întreținerea arborilor, arbuștilor și gardurilor vii",
+        "Curățare sezonieră inclusă"
+      ]
+    }
+  ],
+  "testimonial": {
+    "label": "Loved locally",
+    "title": "What our customers say (asta probabil o scot ca nu sunt review-uri inca)",
+    "stars": "★★★★★"
+  },
+  "testimonials": [
+    {
+      "name": "Sarah M.",
+      "role": "Homeowner, Beaverton",
+      "quote": "Our lawn hasn't looked this good in ten years. The team is punctual, tidy and genuinely cares."
+    },
+    {
+      "name": "Daniel K.",
+      "role": "Property Manager",
+      "quote": "Verdant Care handles four of our buildings. Communication is flawless and results are consistent."
+    },
+    {
+      "name": "Priya R.",
+      "role": "Homeowner, Lake Oswego",
+      "quote": "They redesigned our front beds and now the neighbors keep stopping to ask who did the work."
+    }
+  ],
+  "cta": {
+    "title": "Ai pe cineva care să îți îngrijească grădina?",
+    "description": "Dacă răspunsul tău este nu, cere o consultație gratuită pentru îngrijirea grădinii tale.",
+    "quoteButton": "Obține o ofertă gratuită",
+    "phoneButton": "Apelează 0700-000-000",
+    "phoneHref": "tel:+15550102288"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Services | Verdant Care",
+    "description": "Professional lawn care and landscaping services."
+  },
+  "hero": {
+    "label": "Our Services",
+    "title": "Everything your landscape needs.",
+    "description": "Whether you need weekly lawn maintenance, a complete landscape redesign, or seasonal cleanup, our experienced team is ready to help."
+  },
+  "custom": {
+    "label": "Ai nevoie de ceva personalizat?",
+    "title": "Fiecare grădină este diferită.",
+    "description": "Oferim servicii de întreținere complet personalizate în funcție de dimensiunea, starea și obiectivele amenajarii grădinii tale.",
+    "button": "Cere o ofertă personalizată"
+  },
+  "servicesDescription": [
+    {
+      "title": "Lawn Mowing",
+      "icon": "lucide:scissors",
+      "description": "Weekly mowing with professional equipment, clean edges and complete blow-off after every visit.",
+      "features": [
+        "Weekly or bi-weekly visits",
+        "Professional edging",
+        "Grass clipping cleanup",
+        "Seasonal lawn inspection"
+      ]
+    },
+    {
+      "title": "Tree Care",
+      "icon": "lucide:trees",
+      "description": "Certified arborists providing trimming, pruning and safe removals for healthy trees.",
+      "features": [
+        "Tree pruning",
+        "Dead branch removal",
+        "Safety inspections",
+        "Storm damage cleanup"
+      ]
+    },
+    {
+      "title": "Garden Design",
+      "icon": "lucide:sprout",
+      "description": "Beautiful planting plans designed specifically for your property and climate.",
+      "features": [
+        "Landscape planning",
+        "Plant selection",
+        "Flower beds",
+        "Hardscape integration"
+      ]
+    },
+    {
+      "title": "Seasonal Cleanup",
+      "icon": "lucide:leaf",
+      "description": "Spring and autumn cleanups that prepare your property for the upcoming season.",
+      "features": [
+        "Leaf removal",
+        "Garden cleanup",
+        "Mulching",
+        "Debris hauling"
+      ]
+    },
+    {
+      "title": "Hedge Trimming",
+      "icon": "lucide:leafy-green",
+      "description": "Maintain healthy hedges with precise trimming and shaping throughout the year.",
+      "features": [
+        "Formal hedge shaping",
+        "Shrub pruning",
+        "Growth management",
+        "Waste removal"
+      ]
+    },
+    {
+      "title": "Landscape Maintenance",
+      "icon": "lucide:house",
+      "description": "Complete maintenance plans for residential and commercial landscapes.",
+      "features": [
+        "Monthly inspections",
+        "Weed control",
+        "Fertilization",
+        "Seasonal adjustments"
+      ]
+    }
+  ]
+}
