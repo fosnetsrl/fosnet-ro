@@ -5,6 +5,14 @@ import { Icon } from "astro-icon/components";
 import content from "../content/home.json";
 ---
 
+<link
+  rel="preload"
+  href="/src/assets/fonts/Fraunces-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+
 <Layout title={content.meta.title} description={content.meta.description}>
   <section class="relative isolate overflow-hidden">
     <img
@@ -174,8 +182,8 @@ import content from "../content/home.json";
               <span
                 class={
                   plan.featured
-                    ? "text-primary-foreground/70"
-                    : "text-muted-foreground"
+                    ? "text-primary-foreground/90"
+                    : "text-primary-foreground"
                 }
               >
                 {content.plan.perMonth}
