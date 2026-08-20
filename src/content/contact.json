@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Contact | Verdant Care",
-    "description": "Request a free landscaping quote."
+    "title": "Contact | Foșnet",
+    "description": "Obține o ofertă gratuită."
   },
   "hero": {
     "label": "Contact",
@@ -28,17 +28,17 @@
     {
       "title": "Număr De Telefon",
       "value": "0770700524",
-      "href": "tel:+15550102288",
+      "href": "tel:+40770700524",
       "icon": "lucide:phone"
     },
     {
       "title": "Email",
       "value": "fosnetsrl@gmail.com",
-      "href": "mailto:hello@verdantcare.com",
+      "href": "mailto:fosnetsrl@gmail.com",
       "icon": "lucide:mail"
     },
     {
-      "title": "Ore De Lucru",
+      "title": "Program De Lucru",
       "value": "24/7",
       "href": "#",
       "icon": "lucide:clock"
