@@ -1,11 +1,5 @@
 ---
-const navigation = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/contact", label: "Contact" },
-];
+import { links } from "../data/home";
 import { Icon } from "astro-icon/components";
 import logo from "../assets/logo.png";
 ---
@@ -20,11 +14,11 @@ import logo from "../assets/logo.png";
         >
       </div>
 
-      <p class="mt-4 text-sm text-muted-foreground">
+      <!-- <p class="mt-4 text-sm text-muted-foreground">
         Rooted in craft. Trusted with your outdoor space since 2011.
-      </p>
+      </p> -->
 
-      <div class="mt-5 flex gap-3">
+      <!-- <div class="mt-5 flex gap-3">
         <a
           href="#"
           class="grid h-10 w-10 place-items-center rounded-full border border-border bg-background hover:border-primary hover:text-primary transition-colors"
@@ -45,15 +39,15 @@ import logo from "../assets/logo.png";
         >
           Twitter
         </a>
-      </div>
+      </div> -->
     </div>
 
     <div>
-      <p class="text-sm font-semibold">Navigate</p>
+      <p class="text-sm font-semibold">Navigare</p>
 
       <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
         {
-          navigation.map((item) => (
+          links.map((item) => (
             <li>
               <a href={item.href} class="hover:text-primary">
                 {item.label}
@@ -69,28 +63,35 @@ import logo from "../assets/logo.png";
 
       <ul class="mt-4 space-y-3 text-sm text-muted-foreground">
         <li>
-          <a href="tel:+15550102288" class="hover:text-primary">
-            <Icon name={"lucide:phone"} /> (555) 010-2288
+          <a
+            href="tel:+40770700524"
+            class="flex items-center gap-2 hover:text-primary"
+          >
+            <Icon name={"lucide:phone"} class="size-4 shrink-0" /> 0770-700-524
           </a>
         </li>
 
         <li>
-          <a href="mailto:hello@verdantcare.com" class="hover:text-primary">
-            <Icon name={"lucide:mail"} /> hello@verdantcare.com
+          <a
+            href="mailto:fosnetsrl@gmail.com"
+            class="flex items-center gap-2 hover:text-primary"
+          >
+            <Icon name={"lucide:mail"} class="size-4 shrink-0" /> fosnetsrl@gmail.com
           </a>
         </li>
 
-        <li><Icon name={"lucide:pin"} /> Greater Portland Area</li>
+        <li class="flex items-center gap-2">
+          <Icon name={"lucide:pin"} class="size-4 shrink-0" /> Cluj-Napoca
+        </li>
       </ul>
     </div>
 
     <div>
-      <p class="text-sm font-semibold">Hours</p>
+      <p class="text-sm font-semibold">Program</p>
 
       <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
-        <li>Mon-Fri · 7:00 - 18:00</li>
-        <li>Saturday · 8:00 - 15:00</li>
-        <li>Sunday · Closed</li>
+        <li>Luni-Duminica</li>
+        <li>00:00 - 23:59</li>
       </ul>
     </div>
   </div>
@@ -98,6 +99,6 @@ import logo from "../assets/logo.png";
   <div
     class="border-t border-border py-6 text-center text-xs text-muted-foreground"
   >
-    © {new Date().getFullYear()} Foșnet · All rights reserved.
+    © {new Date().getFullYear()} Foșnet · Toate drepturile rezervate.
   </div>
 </footer>
