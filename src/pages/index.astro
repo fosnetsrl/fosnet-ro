@@ -2,40 +2,42 @@
 import Layout from "../layouts/Layout.astro";
 import hero from "../assets/hero.jpg";
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 import content from "../content/home.json";
 ---
 
-<link
-  rel="preload"
-  href="/src/assets/fonts/Fraunces-Bold.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/>
-
 <Layout title={content.meta.title} description={content.meta.description}>
   <section class="relative isolate overflow-hidden">
-    <img
-      src={hero.src}
+    <Image
+      src={hero}
       alt={content.hero.imageAlt}
       class="absolute inset-0 -z-10 h-full w-full object-cover"
-      width="1920"
-      height="1080"
+      width={1920}
+      height={1080}
+      format="avif"
+      sizes="100vw"
     />
+
+    <!-- <div
+      class="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.9)_0%,rgba(0,0,0,0.6)_35%,rgba(0,0,0,0)_75%)]"
+    >
+    </div> -->
 
     <div
       class="absolute inset-0 -z-10"
-      style="background-image: var(--gradient-hero);"
+      style="background-image:
+      linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, transparent 75%),
+      var(--gradient-hero);"
     >
     </div>
 
-    <div class="mx-auto grid max-w-7xl gap-8 px-6 py-32 md:py-44">
-      <span
+    <div class="mx-auto grid max-w-7xl gap-8 px-6 py-24 md:py-38">
+      <!-- <span
         class="inline-flex w-fit items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-white backdrop-blur"
       >
         <Icon name={"lucide:leaf"} />
         {content.hero.badge}
-      </span>
+      </span> -->
 
       <h1
         class="max-w-3xl font-display text-5xl font-bold leading-tight text-white md:text-7xl"
@@ -55,7 +57,7 @@ import content from "../content/home.json";
       <div class="flex flex-wrap gap-3">
         <a
           href={content.hero.phoneHref}
-          class="inline-flex items-center gap-2 rounded-full btn-hero px-7 py-3.5 text-base font-semibold"
+          class="inline-flex items-center gap-2 rounded-full btn-hero px-6 py-3 text-base font-semibold"
         >
           <Icon name={"lucide:phone"} />
           <span class="ml-2">{content.hero.phoneButton}</span>
@@ -63,7 +65,7 @@ import content from "../content/home.json";
 
         <a
           href="/contact"
-          class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+          class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
         >
           <span class="mr-2">{content.hero.quoteButton}</span>
           <Icon name={"lucide:move-right"} />
@@ -86,8 +88,8 @@ import content from "../content/home.json";
     </p>
   </section>
 
-  <section class="mx-auto max-w-7xl px-6 py-16">
-    <div class="flex items-end justify-between gap-6">
+  <section class="bg-secondary/40 px-6 py-16">
+    <div class="mx-auto max-w-7xl flex items-end justify-between gap-6">
       <div>
         <p class="text-sm font-semibold uppercase tracking-widest text-primary">
           {content.service.label}
@@ -106,14 +108,16 @@ import content from "../content/home.json";
       </a>
     </div>
 
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div
+      class="mx-auto max-w-7xl mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+    >
       {
         content.services.map((service) => (
           <div
             class="group rounded-3xl border border-primary bg-primary text-primary-foreground p-7 transition-all hover:-translate-y-1"
-            style="box-shadow: var(--shadow-elegant)"
+            style="box-shadow: var(--shadow-sharp)"
           >
-            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary-foreground/30 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
+            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary-foreground/50 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
               <Icon name={service.icon} class="h-6 w-6" />
             </div>
 
@@ -155,7 +159,7 @@ import content from "../content/home.json";
                 : "border-border bg-card"
             }`}
             style={`box-shadow:${
-              plan.featured ? "var(--shadow-elegant)" : "var(--shadow-soft)"
+              plan.featured ? "var(--shadow-sharp)" : "var(--shadow-elegant)"
             }`}
           >
             {plan.featured && (
@@ -216,7 +220,7 @@ import content from "../content/home.json";
     </div>
   </section>
 
-  <section class="bg-secondary/40 py-24">
+  <!-- <section class="bg-secondary/40 py-24">
     <div class="mx-auto max-w-7xl px-6">
       <div class="text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-primary">
@@ -251,12 +255,14 @@ import content from "../content/home.json";
         }
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="mx-auto max-w-5xl px-6 py-24">
+  <section
+    class="bg-secondary/40 mx-auto max-w-full px-6 py-24 flex justify-center"
+  >
     <div
-      class="relative overflow-hidden rounded-3xl px-10 py-20 text-center text-primary-foreground md:px-20"
-      style="background-image: var(--gradient-primary); box-shadow: var(--shadow-elegant);"
+      class="relative overflow-hidden max-w-5xl rounded-3xl px-10 py-20 text-center text-primary-foreground md:px-20"
+      style="background-image: var(--gradient-primary); box-shadow: var(--shadow-sharp);"
     >
       <h2 class="font-display text-4xl font-bold md:text-5xl">
         {content.cta.title}
