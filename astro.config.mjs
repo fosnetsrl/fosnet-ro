@@ -5,8 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  // site: "https://fosnet.ro",
-  site: "http://localhost:4321",
+  site: "https://fosnet.ro",
   vite: {
     plugins: [tailwindcss()],
   },
