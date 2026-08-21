@@ -1,49 +1,49 @@
 {
   "meta": {
-    "title": "Verdant Care — Gardening & Landscaping Services",
-    "description": "Professional lawn care, landscaping and garden maintenance."
+  "title": "Foșnet | Îngrijire și amenajare grădini în Cluj-Napoca",
+  "description": "Foșnet se ocupă de grădini de la A la Z: gazon, arbori, plante, amenajare și întreținere în Cluj-Napoca și împrejurimi."
   },
   "hero": {
-    "imageAlt": "Manicured lawn and hedges",
-    "badge": "Locally owned · Since 2011",
+    "imageAlt": "Grădină îngrijită și amenajată",
+    "badge": "Îngrijim grădini cu grijă",
     "titleBefore": "Grădini crescute cu",
     "titleAccent": " grijă ",
-    "descriptionBefore": "De la o simplă tundere a gazonului până la transformarea completă a grădinii,",
+    "descriptionBefore": "De la întreținerea gazonului și îngrijirea arborilor până la amenajarea completă a grădinii,",
     "descriptionAccent": " Foșnet ",
-    "descriptionAfter": " oferă servicii profesionale pentru un exterior impecabil, sezon după sezon.",
+    "descriptionAfter": " se ocupă de tot ce are nevoie grădina ta, în Cluj-Napoca și împrejurimi.",
     "phoneButton": "Sună Acum",
     "quoteButton": "Obține o ofertă gratuită",
-    "phoneHref": "tel:+15550102288"
+    "phoneHref": "tel:+40770700524"
   },
   "about": {
     "label": "Cine suntem?",
-    "title": "Un grup restrâns de grădinari cu atenție impresionantă la detalii.",
-    "description": "Îngrijim fiecare grădină ca pe propria noastră grădină. Suntem punctuali și ne tratăm munca ca pe o prioritate."
+    "title": "Ne ocupăm de grădina ta ca și cum ar fi a noastră.",
+    "description": "Foșnet oferă servicii complete de îngrijire și amenajare a grădinilor. De la gazon și plante până la arbori, arbuști și lucrări sezoniere, avem grijă ca spațiul tău verde să arate bine în fiecare anotimp."
   },
   "service": {
     "label": "Serviciile noastre",
-    "title": "Ce putem face pentru tine",
+    "title": "Ce putem face pentru tine?",
     "button": "Vezi toate serviciile →"
   },
   "services": [
     {
-      "title": "Tuns Gazonul",
-      "desc": "Îngrijire săptămânală professională pentru un gazon des, sănătos și uniform.",
+      "title": "Întreținere gazon",
+      "desc": "Tundere, finisarea marginilor și îngrijire regulată pentru un gazon sănătos și uniform.",
       "icon": "lucide:scissors"
     },
     {
       "title": "Îngrijire arbori",
-      "desc": "Servicii profesionale de toaletare, întreținere și îndepărtare a arborilor, în deplină siguranță.",
+      "desc": "Toaletare, curățare și întreținere pentru arborii și copacii din grădina ta.",
       "icon": "lucide:trees"
     },
     {
       "title": "Amenajare grădini",
-      "desc": "Ronduri de flori, culori atent alese și pavaje special gândite.",
+      "desc": "Transformăm grădina într-un spațiu plăcut, funcțional și ușor de întreținut.",
       "icon": "lucide:sprout"
     },
     {
       "title": "Curățenie sezonieră",
-      "desc": "Începutul de primăvară și îndepărtarea frunzelor prin suflare pentru toamnă.",
+      "desc": "Pregătirea grădinii pentru primăvară, toamnă și iarnă, inclusiv îndepărtarea frunzelor și resturilor vegetale.",
       "icon": "lucide:leaf"
     }
   ],
@@ -115,9 +115,9 @@
   ],
   "cta": {
     "title": "Ai pe cineva care să îți îngrijească grădina?",
-    "description": "Dacă răspunsul tău este nu, cere o consultație gratuită pentru îngrijirea grădinii tale.",
-    "quoteButton": "Obține o ofertă gratuită",
-    "phoneButton": "Apelează 0700-000-000",
-    "phoneHref": "tel:+15550102288"
+    "description": "Spune-ne ce ai nevoie și îți pregătim o ofertă potrivită pentru grădina ta.",
+    "quoteButton": "Cere o ofertă gratuită",
+    "phoneButton": "Sună acum",
+    "phoneHref": "tel:+40770700524"
   }
 }
