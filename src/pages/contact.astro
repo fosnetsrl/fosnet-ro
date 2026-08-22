@@ -55,7 +55,7 @@ import content from "../content/contact.json";
       class="rounded-[2rem] border border-border bg-card p-8"
       style="box-shadow: var(--shadow-soft)"
     >
-      <form class="space-y-6">
+      <form name="contact" method="POST" data-netlify="true" class="space-y-6">
         <div class="grid gap-6 md:grid-cols-2">
           <div>
             <label class="mb-2 block text-sm font-medium">
@@ -64,6 +64,8 @@ import content from "../content/contact.json";
 
             <input
               type="text"
+              name="firstName"
+              required
               class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
             />
           </div>
@@ -75,6 +77,8 @@ import content from "../content/contact.json";
 
             <input
               type="text"
+              name="lastName"
+              required
               class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
             />
           </div>
@@ -88,6 +92,8 @@ import content from "../content/contact.json";
 
             <input
               type="email"
+              name="email"
+              required
               class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
             />
           </div>
@@ -99,6 +105,8 @@ import content from "../content/contact.json";
 
             <input
               type="tel"
+              name="phone"
+              required
               class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
             />
           </div>
@@ -110,6 +118,8 @@ import content from "../content/contact.json";
           </label>
 
           <select
+            name="service"
+            required
             class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
           >
             {content.form.services.map((service) => <option>{service}</option>)}
@@ -122,7 +132,9 @@ import content from "../content/contact.json";
           </label>
 
           <textarea
+            name="message"
             rows="6"
+            required
             class="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:border-primary"
           ></textarea>
         </div>
