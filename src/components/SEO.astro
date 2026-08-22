@@ -1,15 +1,32 @@
 ---
 const schema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "LandscapingBusiness",
   name: "Foșnet",
-  url: "https://fosnet.ro",
-  image: "https://fosnet.ro/logo.png",
+  url: "https://foșnet.ro",
+  // image: "https://fosnet.ro/og-image.jpg",
+  telephone: "+40770700524",
+  email: "fosnetsrl@gmail.com",
+
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cluj-Napoca",
+    addressRegion: "Cluj",
     addressCountry: "RO",
   },
+
+  areaServed: {
+    "@type": "City",
+    name: "Cluj-Napoca",
+  },
+
+  serviceType: [
+    "Amenajare grădini",
+    "Întreținere spații verzi",
+    "Întreținere gazon",
+    "Sisteme de irigații",
+    "Toaletare arbori",
+  ],
 };
 ---
 

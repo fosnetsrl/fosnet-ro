@@ -1,51 +1,45 @@
 {
   "meta": {
-    "title": "Contact | Verdant Care",
-    "description": "Request a free landscaping quote."
+    "title": "Contact | Foșnet",
+    "description": "Obține o ofertă gratuită."
   },
   "hero": {
     "label": "Contact",
-    "title": "Let's talk about your garden.",
-    "description": "Whether you need weekly maintenance or a complete landscape redesign, we'd love to hear about your project."
+    "title": "Pentru discutarea noii voastre grădini.",
+    "description": "Când nu știi de unde să începi, noi suntem aici."
   },
   "form": {
-    "firstName": "First Name",
-    "lastName": "Last Name",
+    "firstName": "Prenume",
+    "lastName": "Nume",
     "email": "Email",
-    "phone": "Phone",
-    "serviceNeeded": "Service Needed",
+    "phone": "Telefon",
+    "serviceNeeded": "Serviciul dorit",
     "services": [
-      "Lawn Care",
-      "Garden Design",
-      "Tree Care",
-      "Landscape Maintenance",
-      "Seasonal Cleanup"
+      "Tăierea Gazonului",
+      "Proiectarea Grădinii",
+      "Toaletare / Defrișare Pomi",
+      "Întreținerea Grădinii",
+      "Curățenie Sezonieră"
     ],
-    "message": "Message",
-    "submit": "Request Free Quote"
+    "message": "Descriere",
+    "submit": "Cere Oferta Gratuit"
   },
   "contactInfo": [
     {
-      "title": "Phone",
-      "value": "(555) 010-2288",
-      "href": "tel:+15550102288",
+      "title": "Număr De Telefon",
+      "value": "0770700524",
+      "href": "tel:+40770700524",
       "icon": "lucide:phone"
     },
     {
       "title": "Email",
-      "value": "hello@verdantcare.com",
-      "href": "mailto:hello@verdantcare.com",
+      "value": "fosnetsrl@gmail.com",
+      "href": "mailto:fosnetsrl@gmail.com",
       "icon": "lucide:mail"
     },
     {
-      "title": "Location",
-      "value": "Greater Portland Area",
-      "href": "#",
-      "icon": "lucide:pin"
-    },
-    {
-      "title": "Working Hours",
-      "value": "Mon-Fri · 7:00 - 18:00",
+      "title": "Program De Lucru",
+      "value": "24/7",
       "href": "#",
       "icon": "lucide:clock"
     }

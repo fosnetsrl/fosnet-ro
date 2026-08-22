@@ -7,7 +7,7 @@ import content from "../content/about.json";
 
 <Layout title={content.meta.title} description={content.meta.description}>
   <section
-    class="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:grid-cols-2 md:items-center"
+    class="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:grid-cols-1 md:items-center"
   >
     <div>
       <p class="text-sm font-semibold uppercase tracking-widest text-primary">
@@ -46,7 +46,7 @@ import content from "../content/about.json";
       </div>
     </div>
 
-    <div class="relative">
+    <!-- <div class="relative">
       <img
         src={team.src}
         alt={content.story.imageAlt}
@@ -55,7 +55,7 @@ import content from "../content/about.json";
         class="w-full rounded-[2rem] object-cover"
         style="box-shadow: var(--shadow-elegant)"
       />
-    </div>
+    </div> -->
   </section>
 
   <section class="bg-secondary/40 py-20">

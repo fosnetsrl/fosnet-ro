@@ -4,14 +4,14 @@
     "description": "Professional lawn care and landscaping services."
   },
   "hero": {
-    "label": "Our Services",
-    "title": "Everything your landscape needs.",
-    "description": "Whether you need weekly lawn maintenance, a complete landscape redesign, or seasonal cleanup, our experienced team is ready to help."
+    "label": "Serviciile Oferite",
+    "title": "Tot ce este mai bun pentru grădina ta.",
+    "description": "De la o simplă tundere de gazon la locul tău de relaxare."
   },
   "custom": {
     "label": "Ai nevoie de ceva personalizat?",
     "title": "Fiecare grădină este diferită.",
-    "description": "Oferim servicii de întreținere complet personalizate în funcție de dimensiunea, starea și obiectivele amenajarii grădinii tale.",
+    "description": "Oferim servicii de întreținere complet personalizate în funcție de dimensiunea, starea și obiectivele amenajării grădinii tale.",
     "button": "Cere o ofertă personalizată"
   },
   "servicesDescription": [
