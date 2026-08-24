@@ -39,8 +39,14 @@
       "icon": "lucide:mail"
     },
     {
+      "title": "Zone deservite",
+      "value": "Cluj, Sălaj și împrejurimi",
+      "href": "#",
+      "icon": "lucide:pin"
+    },
+    {
       "title": "Program de lucru",
-      "value": "Program flexibil, pe bază de programare",
+      "value": "Flexibil, pe bază de programare",
       "href": "#",
       "icon": "lucide:clock"
     }
