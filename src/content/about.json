@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Despre — Foșnet",
-    "description": "Întalneste echipa din spatele firmei."
+    "description": "Întâlnește echipa din spatele firmei."
   },
   "story": {
     "label": "Povestea noastră",
     "title": "Afacere de familie, care pune calitatea mai presus de toate",
     "paragraphs": [
       "Un grup de oameni muncitori, de încredere, dedicați, dornici să lăsăm în urmă o grădină în care să vă doriți să petreceți timpul.",
-      "Dorința noastră este de a vă crea o grădină impecabilă pe care să o menținem an de an, într-un mediu deschis."
+      "Dorința noastră este de a vă crea o grădină impecabilă pe care să o menținem an de an."
     ],
     "imageAlt": "Verdant Care Team"
   },
@@ -20,12 +20,12 @@
   "values": [
     {
       "icon": "lucide:handshake",
-      "title": "Calitate nu cantitate",
+      "title": "Calitate, nu cantitate",
       "desc": "Nu ne discredităm munca pentru a face mai mult."
     },
     {
       "icon": "lucide:shield-half",
-      "title": "Onestitate",
+      "title": "Seriozitatea",
       "desc": "Punctualitate și respect față de termenele stabilite."
     },
     {
@@ -35,17 +35,5 @@
     }
   ],
   "stats": [
-    {
-      "number": "0",
-      "label": "Ani experianta"
-    },
-    {
-      "number": "0",
-      "label": "Ari îngrijiti"
-    },
-    {
-      "number": "0",
-      "label": "Evaluare"
-    }
   ]
 }
