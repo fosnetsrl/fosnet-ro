@@ -117,7 +117,7 @@ import content from "../content/home.json";
             class="group rounded-3xl border border-primary bg-primary text-primary-foreground p-7 transition-all hover:-translate-y-1"
             style="box-shadow: var(--shadow-sharp)"
           >
-            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary-foreground/50 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
+            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-primary-foreground/80 text-primary transition-colors group-hover:bg-secondary-foreground/50 group-hover:text-primary-foreground">
               <Icon name={service.icon} class="h-6 w-6" />
             </div>
 
@@ -149,7 +149,7 @@ import content from "../content/home.json";
       </p>
     </div>
 
-    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
       {
         content.plans.map((plan) => (
           <div
@@ -181,7 +181,12 @@ import content from "../content/home.json";
             </p>
 
             <div class="mt-6 flex items-baseline gap-1">
-              <span class="font-display text-5xl font-bold">${plan.price}</span>
+              <span class="font-display text-1xl mr-2">De la </span>
+            </div>
+
+            <div class="flex items-baseline gap-1">
+              <span class="font-display text-5xl font-bold">{plan.price}</span>
+              <span class="font-display text-2xl">LEI</span>
 
               <span
                 class={
