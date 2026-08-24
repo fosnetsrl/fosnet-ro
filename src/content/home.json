@@ -5,7 +5,7 @@
   },
   "hero": {
     "imageAlt": "Grădină îngrijită și amenajată",
-    "badge": "Îngrijim grădini cu grijă",
+    "badge": "Grădini îngrijite. Făcute să te bucuri de ele.",
     "titleBefore": "Grădini crescute cu",
     "titleAccent": " grijă ",
     "descriptionBefore": "De la întreținerea gazonului și îngrijirea arborilor până la amenajarea completă a grădinii,",
@@ -60,6 +60,7 @@
       "name": "Basic",
       "price": "349",
       "tag": "Potrivit pentru grădini mici",
+      "perMonth": true,
       "features": [
         "Tunderea gazonului la fiecare două săptămâni",
         "Finisarea marginilor gazonului",
@@ -70,6 +71,7 @@
       "name": "Standard",
       "price": "449",
       "tag": "Tot ce are nevoie o familie",
+      "perMonth": true,
       "featured": true,
       "features": [
         "Tot ce conține pachetul Basic",
@@ -82,6 +84,7 @@
       "name": "Premium",
       "price": "949",
       "tag": "Servicii complete de îngrijire",
+      "perMonth": true,
       "features": [
         "Tot ce conține pachetul Standard",
         "Tunderea și finisarea gazonului săptămânal",
