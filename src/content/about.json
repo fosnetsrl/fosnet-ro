@@ -13,9 +13,9 @@
     "imageAlt": "Verdant Care Team"
   },
   "value": {
-    "label": "De ce noi?",
+    "label": "De ce să ne alegi",
     "title": "Valorile noastre",
-    "button": "Work with us →"
+    "button": "Lucrează cu noi →"
   },
   "values": [
     {
@@ -25,18 +25,13 @@
     },
     {
       "icon": "lucide:shield-half",
-      "title": "Insured & certified",
-      "desc": "Fully licensed, insured and trained in modern arboriculture."
+      "title": "Onestitate",
+      "desc": "Punctualitate și respect față de termenele stabilite."
     },
     {
       "icon": "lucide:sprout",
-      "title": "Plant-first mindset",
-      "desc": "Right plant, right place — we work with your yard, not against it."
-    },
-    {
-      "icon": "lucide:trophy",
-      "title": "Neighborhood proof",
-      "desc": "Hundreds of five-star reviews from customers on your street."
+      "title": "Grădina pe primul loc",
+      "desc": "Tratăm fiecare grădină cu grijă, pentru a deveni tot mai verde."
     }
   ],
   "stats": [
