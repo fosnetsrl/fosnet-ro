@@ -13,15 +13,15 @@
     "imageAlt": "Verdant Care Team"
   },
   "value": {
-    "label": "Why choose us",
-    "title": "Values you can see in the work",
+    "label": "De ce noi?",
+    "title": "Valorile noastre",
     "button": "Work with us →"
   },
   "values": [
     {
       "icon": "lucide:handshake",
-      "title": "Care over speed",
-      "desc": "We take the extra ten minutes for clean edges and a full blow-off."
+      "title": "Calitate nu cantitate",
+      "desc": "Nu ne discredităm munca pentru a face mai mult."
     },
     {
       "icon": "lucide:shield-half",
