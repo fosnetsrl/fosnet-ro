@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Services | Verdant Care",
-    "description": "Professional lawn care and landscaping services."
+    "title": "Servicii | Foșnet",
+    "description": "Servicii profesionale de îngrijire a gradinii."
   },
   "hero": {
     "label": "Serviciile Oferite",
@@ -15,71 +15,70 @@
     "button": "Cere o ofertă personalizată"
   },
   "servicesDescription": [
-    {
-      "title": "Lawn Mowing",
-      "icon": "lucide:scissors",
-      "description": "Weekly mowing with professional equipment, clean edges and complete blow-off after every visit.",
-      "features": [
-        "Weekly or bi-weekly visits",
-        "Professional edging",
-        "Grass clipping cleanup",
-        "Seasonal lawn inspection"
-      ]
-    },
-    {
-      "title": "Tree Care",
-      "icon": "lucide:trees",
-      "description": "Certified arborists providing trimming, pruning and safe removals for healthy trees.",
-      "features": [
-        "Tree pruning",
-        "Dead branch removal",
-        "Safety inspections",
-        "Storm damage cleanup"
-      ]
-    },
-    {
-      "title": "Garden Design",
-      "icon": "lucide:sprout",
-      "description": "Beautiful planting plans designed specifically for your property and climate.",
-      "features": [
-        "Landscape planning",
-        "Plant selection",
-        "Flower beds",
-        "Hardscape integration"
-      ]
-    },
-    {
-      "title": "Seasonal Cleanup",
-      "icon": "lucide:leaf",
-      "description": "Spring and autumn cleanups that prepare your property for the upcoming season.",
-      "features": [
-        "Leaf removal",
-        "Garden cleanup",
-        "Mulching",
-        "Debris hauling"
-      ]
-    },
-    {
-      "title": "Hedge Trimming",
-      "icon": "lucide:leafy-green",
-      "description": "Maintain healthy hedges with precise trimming and shaping throughout the year.",
-      "features": [
-        "Formal hedge shaping",
-        "Shrub pruning",
-        "Growth management",
-        "Waste removal"
-      ]
-    },
-    {
-      "title": "Landscape Maintenance",
-      "icon": "lucide:house",
-      "description": "Complete maintenance plans for residential and commercial landscapes.",
-      "features": [
-        "Monthly inspections",
-        "Weed control",
-        "Fertilization",
-        "Seasonal adjustments"
-      ]
-    }
-  ]
+  {
+    "title": "Tundere gazon",
+    "icon": "lucide:scissors",
+    "description": "Tundere cu echipamente profesionale, finisarea marginilor și curățare completă.",
+    "features": [
+      "Finisarea marginilor",
+      "Strângerea și colectarea ierbii tăiate",
+      "Evaluarea stării gazonului"
+    ]
+  },
+  {
+    "title": "Toaletare pomi",
+    "icon": "lucide:trees",
+    "description": "Servicii specializate de fasonare, tăiere de corecție și eliminare sigură a arborilor pentru o creștere sănătoasă.",
+    "features": [
+      "Tăieri de formare și corecție",
+      "Îndepărtarea ramurilor uscate sau periculoase",
+      "Defrișarea arborilor",
+      "Curățare după furtuni sau intemperii"
+    ]
+  },
+  {
+    "title": "Proiectare grădină",
+    "icon": "lucide:rose",
+    "description": "Planuri superbe de amenajare și plantare, concepute special pentru proprietatea ta.",
+    "features": [
+      "Planificarea și configurarea peisajului",
+      "Selecția personalizată a plantelor",
+      "Crearea de ronduri și straturi de flori",
+      "Integrarea aleilor și a elementelor decorative",
+      "Schimbarea reliefului grădinii"
+    ]
+  },
+  {
+    "title": "Curățare sezonieră",
+    "icon": "lucide:trash",
+    "description": "Curățenie generală de primăvară și toamnă pentru a pregăti curtea și plantele pentru sezonul următor.",
+    "features": [
+      "Strângerea frunzelor",
+      "Toaletarea arborilor",
+      "Aplicarea stratului de mulci",
+      "Debarasarea tuturor resturilor vegetale"
+    ]
+  },
+  {
+    "title": "Întreținere garduri vii",
+    "icon": "lucide:leafy-green",
+    "description": "Menținerea sănătății și densității gardurilor vii prin tăieri precise și fasonare corectă pe tot parcursul anului.",
+    "features": [
+      "Tundere și fasonare geometrică",
+      "Toaletarea arbuștilor ornamentali",
+      "Strângerea și debarasarea crengilor"
+    ]
+  },
+  {
+    "title": "Tratamente pentru arbori și gazon",
+    "icon": "lucide:spray-can",
+    "description": "Programe complete de fertilizare și tratamente fitosanitare pentru protejarea plantelor împotriva bolilor și dăunătorilor.",
+    "features": [
+      "Inspecții și diagnosticare periodică",
+      "Erbicidare și combaterea buruienilor",
+      "Fertilizare foliară și granulară",
+      "Tratamente adaptate în funcție de sezon"
+    ]
+  }
+]
 }
