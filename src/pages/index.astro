@@ -184,15 +184,17 @@ import content from "../content/home.json";
               <span class="font-display text-5xl font-bold">{plan.price}</span>
               <span class="font-display text-2xl">LEI</span>
 
-              <span
-                class={
-                  plan.featured
-                    ? "text-primary-foreground/90"
-                    : "text-primary-foreground"
-                }
-              >
-                {content.plan.perMonth}
-              </span>
+              {plan.perMonth && (
+                <span
+                  class={
+                    plan.featured
+                      ? "text-primary-foreground/90"
+                      : "text-secondary-foreground"
+                  }
+                >
+                  {content.plan.perMonth}
+                </span>
+              )}
             </div>
             <ul class="mt-8 space-y-3 text-sm">
               {plan.features.map((feature) => (
