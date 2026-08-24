@@ -117,7 +117,7 @@ import content from "../content/home.json";
             class="group rounded-3xl border border-primary bg-primary text-primary-foreground p-7 transition-all hover:-translate-y-1"
             style="box-shadow: var(--shadow-sharp)"
           >
-            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary-foreground/50 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
+            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-primary-foreground/80 text-primary transition-colors group-hover:bg-secondary-foreground/50 group-hover:text-primary-foreground">
               <Icon name={service.icon} class="h-6 w-6" />
             </div>
 
@@ -149,11 +149,11 @@ import content from "../content/home.json";
       </p>
     </div>
 
-    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
       {
         content.plans.map((plan) => (
           <div
-            class={`relative rounded-3xl border p-8 transition-transform hover:-translate-y-1 ${
+            class={`relative flex h-full flex-col rounded-3xl border p-8 transition-transform hover:-translate-y-1 ${
               plan.featured
                 ? "border-primary bg-primary text-primary-foreground"
                 : "border-border bg-card"
@@ -167,9 +167,7 @@ import content from "../content/home.json";
                 {content.plan.popular}
               </span>
             )}
-
             <h3 class="font-display text-2xl font-semibold">{plan.name}</h3>
-
             <p
               class={`mt-1 text-sm ${
                 plan.featured
@@ -179,21 +177,25 @@ import content from "../content/home.json";
             >
               {plan.tag}
             </p>
-
             <div class="mt-6 flex items-baseline gap-1">
-              <span class="font-display text-5xl font-bold">${plan.price}</span>
-
-              <span
-                class={
-                  plan.featured
-                    ? "text-primary-foreground/90"
-                    : "text-primary-foreground"
-                }
-              >
-                {content.plan.perMonth}
-              </span>
+              <span class="font-display text-1xl mr-2">De la </span>
             </div>
+            <div class="flex items-baseline gap-1">
+              <span class="font-display text-5xl font-bold">{plan.price}</span>
+              <span class="font-display text-2xl">LEI</span>
 
+              {plan.perMonth && (
+                <span
+                  class={
+                    plan.featured
+                      ? "text-primary-foreground/90"
+                      : "text-secondary-foreground"
+                  }
+                >
+                  {content.plan.perMonth}
+                </span>
+              )}
+            </div>
             <ul class="mt-8 space-y-3 text-sm">
               {plan.features.map((feature) => (
                 <li class="flex gap-2">
@@ -203,17 +205,19 @@ import content from "../content/home.json";
               ))}
             </ul>
 
-            <a
-              href="/contact"
-              class={`mt-8 inline-flex w-full justify-center rounded-full px-5 py-3 text-sm font-semibold ${
-                plan.featured
-                  ? "bg-white text-primary hover:bg-white/90"
-                  : "btn-hero"
-              }`}
-            >
-              {content.plan.buttonPrefix}
-              {plan.name}
-            </a>
+            <div class="mt-auto pt-8">
+              <a
+                href="/contact"
+                class={`inline-flex w-full justify-center rounded-full px-5 py-3 text-sm font-semibold ${
+                  plan.featured
+                    ? "bg-white text-primary hover:bg-white/90"
+                    : "btn-hero"
+                }`}
+              >
+                {content.plan.buttonPrefix}
+                {plan.name}
+              </a>
+            </div>
           </div>
         ))
       }

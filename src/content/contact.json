@@ -5,7 +5,7 @@
   },
   "hero": {
     "label": "Contact",
-    "title": "Pentru discutarea noii voastre grădini.",
+    "title": "Hai să vorbim despre grădina ta.",
     "description": "Când nu știi de unde să începi, noi suntem aici."
   },
   "form": {
@@ -19,15 +19,16 @@
       "Proiectarea Grădinii",
       "Toaletare / Defrișare Pomi",
       "Întreținerea Grădinii",
-      "Curățenie Sezonieră"
+      "Curățenie Sezonieră",
+      "Altele"
     ],
     "message": "Descriere",
-    "submit": "Cere Oferta Gratuit"
+    "submit": "Cere o ofertă gratuită"
   },
   "contactInfo": [
     {
-      "title": "Număr De Telefon",
-      "value": "0770700524",
+      "title": "Număr de telefon",
+      "value": "0770-700-524",
       "href": "tel:+40770700524",
       "icon": "lucide:phone"
     },
@@ -38,8 +39,8 @@
       "icon": "lucide:mail"
     },
     {
-      "title": "Program De Lucru",
-      "value": "24/7",
+      "title": "Program de lucru",
+      "value": "Program flexibil, pe bază de programare",
       "href": "#",
       "icon": "lucide:clock"
     }

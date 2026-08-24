@@ -5,7 +5,7 @@
   },
   "hero": {
     "imageAlt": "Grădină îngrijită și amenajată",
-    "badge": "Îngrijim grădini cu grijă",
+    "badge": "Grădini îngrijite. Făcute să te bucuri de ele.",
     "titleBefore": "Grădini crescute cu",
     "titleAccent": " grijă ",
     "descriptionBefore": "De la întreținerea gazonului și îngrijirea arborilor până la amenajarea completă a grădinii,",
@@ -16,7 +16,7 @@
     "phoneHref": "tel:+40770700524"
   },
   "about": {
-    "label": "Cine suntem?",
+    "label": "Ce facem?",
     "title": "Ne ocupăm de grădina ta ca și cum ar fi a noastră.",
     "description": "Foșnet oferă servicii complete de îngrijire și amenajare a grădinilor. De la gazon și plante până la arbori, arbuști și lucrări sezoniere, avem grijă ca spațiul tău verde să arate bine în fiecare anotimp."
   },
@@ -48,7 +48,7 @@
     }
   ],
   "plan": {
-    "label": "Plans",
+    "label": "Pachete",
     "title": "Îngrijire simplă lunară.",
     "description": "Alege un plan care îți complimentează propria grădină.",
     "popular": "Cel mai popular",
@@ -58,36 +58,53 @@
   "plans": [
     {
       "name": "Basic",
-      "price": "89",
+      "price": "349",
       "tag": "Potrivit pentru grădini mici",
+      "perMonth": true,
       "features": [
         "Tunderea gazonului la fiecare două săptămâni",
         "Finisarea marginilor gazonului",
-        "Evaluare sezonieră a stării grădinii",
-        "(mai trebe ceva aici)"
+        "Evaluare sezonieră a stării grădinii"
       ]
     },
     {
       "name": "Standard",
-      "price": "149",
-      "tag": "Cel mai popular plan al nostru (ar trebui schimbat ca mai scrie deasupra)",
+      "price": "449",
+      "tag": "Tot ce are nevoie o familie",
+      "perMonth": true,
       "featured": true,
       "features": [
-        "Tunderea gazonului la fiecare două săptămâni",
+        "Tot ce conține pachetul Basic",
         "Toaletarea gardurilor vii și a arbuștilor",
-        "Îndepărtarea buruienilor",
-        "Tratamente împotriva dăunătorilor"
+        "Colectare și debarasarea resturi vegetale",
+        "Întreținerea pavajului"        
       ]
     },
     {
       "name": "Premium",
-      "price": "239",
+      "price": "949",
       "tag": "Servicii complete de îngrijire",
+      "perMonth": true,
       "features": [
+        "Tot ce conține pachetul Standard",
         "Tunderea și finisarea gazonului săptămânal",
         "Întreținerea completă a grădinii",
         "Întreținerea arborilor, arbuștilor și gardurilor vii",
-        "Curățare sezonieră inclusă"
+        "Curățare sezonieră inclusă",
+        "Tratamente"
+      ]
+    },
+    {
+      "name": "One-Time",
+      "price": "199",
+      "tag": "Un serviciu, o vizită",
+      "features": [
+        "Tundere gazon",
+        "Toaletare pomi",
+        "Întreținerea completă a grădinii",
+        "Întreținere garduri vii",
+        "Curățare sezonieră",
+        "Tratamente"
       ]
     }
   ],

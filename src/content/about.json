@@ -1,56 +1,39 @@
 {
   "meta": {
-    "title": "About — Verdant Care",
-    "description": "Meet the team behind Verdant Care. test test"
+    "title": "Despre — Foșnet",
+    "description": "Întâlnește echipa din spatele firmei."
   },
   "story": {
-    "label": "Our story",
-    "title": "Family owned. Rooted in the neighborhood.",
+    "label": "Povestea noastră",
+    "title": "Afacere de familie, care pune calitatea mai presus de toate",
     "paragraphs": [
-      "Verdant Care started in 2011 with one truck, one mower, and a promise: treat every yard like our own. Fourteen years later we're a tight crew of gardeners, arborists and designers with hundreds of happy neighbors.",
-      "We don't chase big commercial contracts. We show up, do careful work, and get invited back season after season."
+      "Un grup de oameni muncitori, de încredere, dedicați, dornici să lăsăm în urmă o grădină în care să vă doriți să petreceți timpul.",
+      "Dorința noastră este de a vă crea o grădină impecabilă pe care să o menținem an de an."
     ],
     "imageAlt": "Verdant Care Team"
   },
   "value": {
-    "label": "Why choose us",
-    "title": "Values you can see in the work",
-    "button": "Work with us →"
+    "label": "De ce să ne alegi",
+    "title": "Valorile noastre",
+    "button": "Lucrează cu noi →"
   },
   "values": [
     {
       "icon": "lucide:handshake",
-      "title": "Care over speed",
-      "desc": "We take the extra ten minutes for clean edges and a full blow-off."
+      "title": "Calitate, nu cantitate",
+      "desc": "Nu ne discredităm munca pentru a face mai mult."
     },
     {
       "icon": "lucide:shield-half",
-      "title": "Insured & certified",
-      "desc": "Fully licensed, insured and trained in modern arboriculture."
+      "title": "Seriozitatea",
+      "desc": "Punctualitate și respect față de termenele stabilite."
     },
     {
       "icon": "lucide:sprout",
-      "title": "Plant-first mindset",
-      "desc": "Right plant, right place — we work with your yard, not against it."
-    },
-    {
-      "icon": "lucide:trophy",
-      "title": "Neighborhood proof",
-      "desc": "Hundreds of five-star reviews from customers on your street."
+      "title": "Grădina pe primul loc",
+      "desc": "Tratăm fiecare grădină cu grijă, pentru a deveni tot mai verde."
     }
   ],
   "stats": [
-    {
-      "number": "14+",
-      "label": "Years serving"
-    },
-    {
-      "number": "800+",
-      "label": "Yards cared for"
-    },
-    {
-      "number": "4.9★",
-      "label": "Average rating"
-    }
   ]
 }
