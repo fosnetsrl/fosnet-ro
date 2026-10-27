@@ -64,7 +64,7 @@ import content from "../content/home.json";
         </a>
 
         <a
-          href="/contact/"
+          href="/contact"
           class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
         >
           <span class="mr-2">{content.hero.quoteButton}</span>
@@ -101,7 +101,7 @@ import content from "../content/home.json";
       </div>
 
       <a
-        href="/services/"
+        href="/services"
         class="hidden md:inline text-sm font-semibold text-primary hover:underline"
       >
         {content.service.button}
@@ -149,7 +149,7 @@ import content from "../content/home.json";
       </p>
     </div>
 
-    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {
         content.plans.map((plan) => (
           <div
@@ -207,7 +207,7 @@ import content from "../content/home.json";
 
             <div class="mt-auto pt-8">
               <a
-                href="/contact/"
+                href="/contact"
                 class={`inline-flex w-full justify-center rounded-full px-5 py-3 text-sm font-semibold ${
                   plan.featured
                     ? "bg-white text-primary hover:bg-white/90"
@@ -278,7 +278,7 @@ import content from "../content/home.json";
 
       <div class="mt-8 flex flex-wrap justify-center gap-3">
         <a
-          href="/contact/"
+          href="/contact"
           class="inline-flex items-center rounded-full bg-white px-7 py-3.5 text-base font-semibold text-primary transition-transform hover:-translate-y-0.5"
         >
           <span class="mr-2">{content.cta.quoteButton}</span>
